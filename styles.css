@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  --beige: #f5efe6;
+  --white: #fff;
+  --debattblue: #e7eeff;
+  --blue: #2651c5;
+  --darkgray: #a2a2a2;
+  --burgundy: #991f2e;
+  --orange: #ff6900;
+  --rorslared: #d3001a;
+  --teal: #00cccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  background-color: var(--beige);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+small {
+  margin: 0;
+  line-height: 110%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  width: 100%;
+}
+
+.element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+element:hover {
+  text-decoration: underline;
+}
+
+.element div {
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+}
+
+.onecolumn a {
+  height: 100%;
+}
+
+.onecolumn img {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: cover;
+}
+
+.onecolumn h1 {
+  font-size: 3.5rem;
+}
+
+.onecolumn h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.onecolumnLong a {
+  display: flex;
+  flex-direction: row;
+}
+
+.onecolumnLong img {
+  width: 320px;
+  height: auto;
+
+  object-fit: cover;
+}
+
+.onecolumnLong h1 {
+  font-size: 2rem;
+}
+
+.onecolumnLong h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.onecolumnLong div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.twocolumns {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.twocolumns img {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+}
+
+.twocolumns h1 {
+  font-size: 2rem;
+}
+
+.twocolumns h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.twocolumns div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.threecolumns {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.threecolumns img {
+  width: 100%;
+  height: auto;
+  max-height: 186px;
+  object-fit: cover;
+}
+
+.threecolumns h1 {
+  font-size: 1.5rem;
+}
+
+.threecolumns h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.threecolumns div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.debatt div {
+  background-color: var(--debattblue);
+  box-shadow: var(--box-shadow);
+}
+
+.debatt span {
+  margin-bottom: 20px;
+}
+
+.debatt h1 {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.debattnoimg h1 {
+  margin: 50px 0;
+}
+
+.noimg img {
+  display: none;
+}
+
+.noimg h1 {
+  font-size: 2rem;
+}
+
+.noimg h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.orangestrip {
+  border-left: 5px solid var(--orange);
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  color: var(--darkgray);
+  font-size: 1rem;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.category img {
+  width: 50px;
+}
+
+.categorydebatt b {
+  color: var(--blue);
+  font-weight: 900;
+}
+
+.categoryreportasje b {
+  color: var(--burgundy);
+  font-weight: 900;
+}
+
+.debattimg div {
+  background-color: var(--white);
+}
+
+.debatt-byline {
+  background-color: var(--white) !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  gap: 10px !important;
+  max-height: 80px !important;
+  min-height: auto !important;
+}
+
+.debatt-byline img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.debatt-byline div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0px;
+}
+
+.onecolumn .reportasje {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.onecolumn .reportasje img {
+  width: 65%;
+  height: 480px;
+
+  object-fit: cover;
+}
+
+.onecolumn .reportasje h1 {
+  font-size: 2.5rem;
+}
+
+.onecolumn .reportasje div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  height: 480px !important;
+  margin-top: 0;
+}
+
+.reportasje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reportasje h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.reportasje div {
+  width: 95%;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.threecolumns .reportasje div {
+  margin-top: -20px;
+  align-items: center;
+}
+
+.special {
+  background-color: rgba(255, 105, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 8px solid #ff6900;
+}
+
+.special .twocolumns {
+  gap: 10px;
+}
+
+.special .threecolumns {
+  gap: 10px;
+}
+
+.special-title {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.adContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.rorsla {
+  width: 100%;
+  background-color: var(--rorslared);
+  min-height: 150px;
+}
+
+.newsletter {
+  width: 100%;
+  height: 150px;
+  background-color: var(--teal);
+}
+
+.fleresakerDebatt {
+  background-color: var(--blue);
+  box-shadow: var(--box-shadow);
+  color: var(--white);
+  padding: 20px;
+}
+
+.fleresakerDebatt a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fleresakerDebatt img {
+  width: 20px;
+}
+
+.fleresakerDebatt h4 {
+  margin: 0;
+}
+
+.nyttOmFolk {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flereSakerListe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  justify-content: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.flereSakerListe h4 {
+  padding: 10px 0;
+}
+
+.listElement {
+  box-shadow: var(--box-shadow);
+}
+
+.listElement div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.flereSakerWrapper {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  overflow-y: scroll;
+  justify-content: flex-start !important;
+}
+
+.flereSakerWrapper img {
+  width: 100px !important;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.flereSakerWrapper a {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  cursor: pointer;
+}
+
+.flereSakerWrapper h4 {
+  font-size: 1rem;
+}
+
+.flereSakerWrapper h1 {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .threecolumns {
+    flex-direction: column;
+  }
+
+  .threecolumns a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .threecolumns div {
+    height: 186px;
+  }
+
+  .threecolumns .debattnoimg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .threecolumns .debattnoimg .debatt-byline {
+    padding: 10px;
+  }
+
+  .onecolumn .reportasje {
+    flex-direction: column;
+  }
+
+  .onecolumn .reportasje img {
+    width: 100%;
+    height: auto;
+  }
+
+  .onecolumn .reportasje div {
+    width: 95%;
+    height: 100% !important;
+    margin-top: -50px;
+  }
+
+  .threecolumns .reportasje div {
+    margin-top: 0;
+    align-items: flex-start;
+  }
+
+  .threecolumns .reportasje h1 {
+    text-align: left;
+  }
+
+  .categoryreportasje {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .twocolumns {
+    flex-direction: column;
+  }
+
+  .onecolumn h1 {
+    font-size: 2.5rem;
+  }
+
+  /*   .onecolumnLong a {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .onecolumnLong img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+
+  .onecolumnLong h1 {
+    font-size: 1.5rem;
+  }
+
+  .onecolumnLong div {
+    width: 100%;
+  }
+
+  .twocolumns h1 {
+    font-size: 1.5rem;
+  }
+
+  .threecolumns h1 {
+    font-size: 1.2rem;
+  }
+
+  .threecolumns img {
+    max-width: 150px;
+  }
+
+  .onecolumn h4 {
+    font-size: 1rem;
+  }
+
+  .twocolumns h4 {
+    font-size: 1rem;
+  }
+
+  .threecolumns h4 {
+    font-size: 1rem;
+  }
+
+  .debatt div {
+    min-height: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /*   .threecolumns a {
+    flex-direction: column;
+  } */
+
+  .threecolumns img {
+    max-width: 150px;
+  }
+
+  .threecolumns div {
+    height: 100%;
+  }
+
+  .onecolumn .reportasje h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .threecolumns .reportasje div {
+    margin-top: -20px;
+    align-items: center;
+  }
+}
