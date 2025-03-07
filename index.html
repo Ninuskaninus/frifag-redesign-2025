@@ -18,7 +18,7 @@
   <body>
     <nav>
       <div class="navLogo">
-        <img src="/images/frifag-black.png" alt="" />
+        <img src="images/frifag-black.png" alt="" />
       </div>
       <div class="navLinks">
         <ul>
@@ -26,7 +26,7 @@
           <li>
             <button class="navbtn" id="redaksjonsBtn">
               <p>Redaksjoner</p>
-              <img src="/images/trekant.png" alt="" />
+              <img src="images/trekant.png" alt="" />
             </button>
           </li>
           <li><a href="om-os.html">Nyhetsbrev</a></li>
@@ -34,7 +34,7 @@
           <li>
             <button class="navbtn" id="merBtn">
               <p>Mer</p>
-              <img src="/images/trekant.png" alt="" />
+              <img src="images/trekant.png" alt="" />
             </button>
           </li>
         </ul>
@@ -42,13 +42,13 @@
           <form class="navSearchDesktop" action="search">
             <input type="text" placeholder="Søk" />
             <button type="submit">
-              <img src="/images/search.png" alt="" />
+              <img src="images/search.png" alt="" />
             </button>
           </form>
         </div>
       </div>
       <div>
-        <button class="navHamburger">
+        <button class="navHamburger" id="hamburgerDropdown">
           <span></span>
           <span></span>
           <span></span>
@@ -127,6 +127,65 @@
         </div>
       </div>
     </section>
+    <section
+      class="hamburgerElementContainer hamburgerElementContainerMobile"
+      id="hamburgerContainerMob"
+    >
+      <div class="hamburgerElement">
+        <h4>AKTUELT</h4>
+        <ul>
+          <li><a href="">Nyheter</a></li>
+          <li><a href="">Debatt</a></li>
+          <li><a href="">Utenriks</a></li>
+          <li><a href="">Kultur</a></li>
+          <li><a href="">Nytt om Folk</a></li>
+        </ul>
+      </div>
+      <div class="hamburgerElement">
+        <h4>HØR MER FRA OSS</h4>
+        <ul>
+          <li><a href="">Podkast</a></li>
+          <li><a href="">Nyhetsbrev</a></li>
+          <li><a href="">Sosiale medier</a></li>
+        </ul>
+      </div>
+      <div class="hamburgerElement">
+        <h4>VÅRE FELT</h4>
+        <ul>
+          <li><a href="">Lønnsoppgjøret</a></li>
+          <li><a href="">Rettigheter på jobben</a></li>
+          <li><a href="">Tariffleksikon</a></li>
+          <li><a href="">Foreign Workers</a></li>
+        </ul>
+      </div>
+      <div class="hamburgerElement">
+        <h4>OM OSS</h4>
+        <ul>
+          <li><a href="">Om FriFagbevegelse</a></li>
+          <li><a href="">Annonsering</a></li>
+          <li><a href="">Kontakt oss</a></li>
+        </ul>
+      </div>
+      <div class="hamburgerElement dropdownElement">
+        <button id="redaksjonerMobBtn">REDAKSJONER</button>
+        <div class="hamburgerRedaksjonerMob" id="redaksjonerMobElement">
+          <ul>
+            <li><a href="">Arbeidsmanden</a></li>
+            <li><a href="">I skolen</a></li>
+            <li><a href="">Magasinet Styrke</a></li>
+            <li><a href="">NJF-magasinet</a></li>
+            <li><a href="">Fontene</a></li>
+            <li><a href="">NNN-arbeideren</a></li>
+            <li><a href="">LO-Aktuelt</a></li>
+            <li><a href="">NTL-magasinet</a></li>
+            <li><a href="">HK-Nytt</a></li>
+            <li><a href="">Magasinet for fagorganiserte</a></li>
+            <li><a href="">NFF-magasinet</a></li>
+            <li><a href="">Nettverk</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <main>
       <div class="adContainer">Annonse</div>
       <section class="onecolumn">
@@ -140,7 +199,7 @@
       </section>
       <section class="onecolumn">
         <a class="element toppsak" id="toppsak" href="">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel på saken</h1>
@@ -149,14 +208,14 @@
       </section>
       <section class="twocolumns">
         <a class="element" id="sak1" href="">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel på saken</h1>
           </div>
         </a>
         <a href="*" id="sak2" class="element debatt debattimg" id="debatt2">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <span class="category categorydebatt">
               <b>Meninger</b> |
@@ -168,7 +227,7 @@
       </section>
       <section class="onecolumnLong">
         <a href="*" class="element" id="sak3">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -177,7 +236,7 @@
       </section>
       <section class="twocolumns">
         <div class="workCarousel">
-          <img src="/images/FrifagJobb - sort.png" alt="" />
+          <img src="images/FrifagJobb - sort.png" alt="" />
           <p>Nå: <span id="workCount">0</span> stillingsannonser</p>
           <div class="workCarouselWrapper" id="jobbkarusell"></div>
         </div>
@@ -191,45 +250,108 @@
       </section>
       <section class="onecolumnLong">
         <a href="*" class="element" id="sak5">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
       </section>
-      <section class="onecolumn">
-        <div class="rorsla"></div>
+      <section class="twocolumns">
+        <a class="element" href="" id="sak35">
+          <img src="images/placeholders-01.png" alt="" />
+          <div>
+            <h4>Stikktittel</h4>
+            <h1>Tittel</h1>
+          </div>
+        </a>
+        <a class="element" href="" id="sak36">
+          <img src="images/placeholders-01.png" alt="" />
+          <div>
+            <h4>Stikktittel</h4>
+            <h1>Tittel</h1>
+          </div>
+        </a>
+        <!--         <div class="rorsla-container">
+          <img class="rorsla-img-1" src="images/rorsla-img1.png" alt="" />
+          <img class="rorsla-img-2" src="images/rorsla-img2.png" alt="" />
+          <div class="rorsla-content">
+            <h1>Lytt til siste episode her</h1>
+            <div class="rorsla-links">
+              <p>Du finner oss på flere plattformer</p>
+              <a href=""><img src="images/spotify.png" alt="" /></a>
+              <a href=""><img src="images/appemusic.png" alt="" /></a>
+              <a href=""><img src="images/podimo.png" alt="" /></a>
+              <a href=""><img src="images/podme.png" alt="" /></a>
+            </div>
+          </div>
+        </div> -->
       </section>
+      <section class="special">
+        <h1 class="special-title">Tittel på spesialrigget</h1>
+        <section class="twocolumns">
+          <a href="" class="element" id="sak37">
+            <img src="images/placeholders-01.png" alt="" />
+            <div>
+              <h4>Stikktittel</h4>
+              <h1>Tittel</h1>
+            </div>
+          </a>
+          <a href="" class="element" id="sak38">
+            <img src="images/placeholders-01.png" alt="" />
+            <div>
+              <h4>Stikktittel</h4>
+              <h1>Tittel</h1>
+            </div>
+          </a>
+        </section>
+        <section class="threecolumns">
+          <a href="" class="element" id="sak39">
+            <img src="images/placeholders-01.png" alt="" />
+            <div>
+              <h4>Stikktittel</h4>
+              <h1>Tittel</h1>
+            </div>
+          </a>
+          <a href="" class="element" id="sak40">
+            <img src="images/placeholders-01.png" alt="" />
+            <div>
+              <h4>Stikktittel</h4>
+              <h1>Tittel</h1>
+            </div>
+          </a>
+          <a href="" class="element" id="sak41">
+            <img src="images/placeholders-01.png" alt="" />
+            <div>
+              <h4>Stikktittel</h4>
+              <h1>Tittel</h1>
+            </div>
+          </a>
+        </section>
+      </section>
+
       <section class="onecolumnLong">
         <a href="*" class="element" id="sak6">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
-      </section>
-      <section class="onecolumn">
-        <div class="adContainer">Fått med deg disse sakene?</div>
-      </section>
-      <section class="onecolumn">
-        <div class="newsletter"></div>
       </section>
       <section class="twocolumns">
         <a href="*" class="element rorsla" id="sak7">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <span class="category categoryrorsla">
-              <img src="/images/rorsla-red.png" alt="" />
-              |
+              <img src="images/rorsla-red.png" alt="" /> |
               <p>Stikktittel</p>
             </span>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak8">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -256,7 +378,7 @@
             <h1>Tittel</h1>
           </div>
           <div class="debatt-byline">
-            <img src="/images/placeholders-01.png" alt="" />
+            <img src="images/placeholders-01.png" alt="" />
             <div>
               <b>Navn Navnesen</b>
               <p>Spaltist i FriFagbevegelse</p>
@@ -268,27 +390,27 @@
         <div class="fleresakerDebatt">
           <a href="*">
             <h4>Flere debattinnlegg</h4>
-            <img src="/images/arrow-right.png" alt="" />
+            <img src="images/arrow-right.png" alt="" />
           </a>
         </div>
       </section>
       <section class="threecolumns">
         <a href="*" class="element" id="sak11">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak12">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak13">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -297,14 +419,14 @@
       </section>
       <section class="twocolumns">
         <a href="*" class="element" id="sak14">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak15">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -313,7 +435,7 @@
       </section>
       <section class="onecolumnLong">
         <a href="*" class="element" id="sak16">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -321,11 +443,36 @@
         </a>
       </section>
       <section class="onecolumn">
-        <div class="nyttOmFolk">Nytt om folk</div>
+        <div class="nyttOmFolk">
+          <h5>Nytt om folk</h5>
+          <section class="threecolumns">
+            <a href="*" class="element" id="sak42">
+              <img src="images/placeholders-01.png" alt="" />
+              <div>
+                <h4>Stikktittel</h4>
+                <h1>Tittel</h1>
+              </div>
+            </a>
+            <a href="*" class="element" id="sak43">
+              <img src="images/placeholders-01.png" alt="" />
+              <div>
+                <h4>Stikktittel</h4>
+                <h1>Tittel</h1>
+              </div>
+            </a>
+            <a href="*" class="element" id="sak44">
+              <img src="images/placeholders-01.png" alt="" />
+              <div>
+                <h4>Stikktittel</h4>
+                <h1>Tittel</h1>
+              </div>
+            </a>
+          </section>
+        </div>
       </section>
       <section class="onecolumn">
         <a href="*" class="element reportasje" id="sak17">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <span class="category categoryreportasje">
               <b>Reportasje</b>
@@ -338,7 +485,7 @@
       </section>
       <section class="twocolumns">
         <a href="*" class="element" id="sak18">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -350,29 +497,54 @@
         </div>
       </section>
       <section class="onecolumn">
-        <div class="nytt-om-folk-container">
-          <div class="nytt-om-folk-arrow-left"><</div>
-          <div class="nytt-om-folk-arrow-right">></div>
-          <div class="nytt-om-folk-wrapper"></div>
+        <div class="element tickerContainer">
+          <div class="tickerLeft">
+            <img src="images/arrow-left-orange.png" alt="" />
+          </div>
+          <div class="tickerRight">
+            <img src="images/arrow-right-orange.png" alt="" />
+          </div>
+          <div class="ticker-wrapper">
+            <a href="">
+              <h1>Dette er en lang tittel på en sak i tickeren</h1>
+            </a>
+            <span></span>
+            <a href="">
+              <h1>Dette er en lang tittel på en sak i tickeren</h1>
+            </a>
+            <span></span>
+            <a href="">
+              <h1>Dette er en lang tittel på en sak i tickeren</h1>
+            </a>
+            <a href="">
+              <h1>Dette er en lang tittel på en sak i tickeren</h1>
+            </a>
+            <a href="">
+              <h1>Dette er en lang tittel på en sak i tickeren</h1>
+            </a>
+            <a href="">
+              <h1>Dette er en lang tittel på en sak i tickeren</h1>
+            </a>
+          </div>
         </div>
       </section>
       <section class="threecolumns">
         <a href="*" class="element" id="sak19">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak20">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak21">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -381,14 +553,14 @@
       </section>
       <section class="twocolumns">
         <a href="*" class="element" id="sak22">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak23">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -398,10 +570,10 @@
       <section class="onecolumn">
         <div class="element tickerContainer">
           <div class="tickerLeft">
-            <img src="/images/arrow-left-orange.png" alt="" />
+            <img src="images/arrow-left-orange.png" alt="" />
           </div>
           <div class="tickerRight">
-            <img src="/images/arrow-right-orange.png" alt="" />
+            <img src="images/arrow-right-orange.png" alt="" />
           </div>
           <div class="ticker-wrapper">
             <a href="">
@@ -429,36 +601,33 @@
       </section>
       <section class="onecolumn">
         <a href="*" class="element" id="sak24">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
-      </section>
-      <section class="onecolumn">
-        <div class="flereSakerListe">Flere saker</div>
       </section>
       <section class="onecolumn">
         <div class="rorsla"></div>
       </section>
       <section class="threecolumns">
         <a href="*" class="element" id="sak25">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak26">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak27">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -467,21 +636,21 @@
       </section>
       <section class="threecolumns">
         <a href="*" class="element" id="sak28">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak29">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
           </div>
         </a>
         <a href="*" class="element" id="sak30">
-          <img src="/images/placeholders-02.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -490,7 +659,7 @@
       </section>
       <section class="onecolumnLong">
         <a href="*" class="element" id="sak31">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -499,7 +668,7 @@
       </section>
       <section class="onecolumnLong">
         <a href="*" class="element" id="sak32">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -508,7 +677,7 @@
       </section>
       <section class="onecolumnLong">
         <a href="*" class="element" id="sak33">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <h4>Stikktittel</h4>
             <h1>Tittel</h1>
@@ -517,7 +686,7 @@
       </section>
       <section class="onecolumn">
         <a href="" class="element reportasje" id="sak34">
-          <img src="/images/placeholders-01.png" alt="" />
+          <img src="images/placeholders-01.png" alt="" />
           <div>
             <span class="category categoryreportasje">
               <b>Reportasje</b>
@@ -565,10 +734,10 @@
           <div>
             <h4>Sosiale medier</h4>
             <div class="footerSome">
-              <a href=""><img src="/images/facebook.png" alt="" /></a>
-              <a href=""><img src="/images/x.png" alt="" /></a>
-              <a href=""><img src="/images/insta.png" alt="" /></a>
-              <a href=""><img src="/images/tiktok.png" alt="" /></a>
+              <a href=""><img src="images/facebook.png" alt="" /></a>
+              <a href=""><img src="images/x.png" alt="" /></a>
+              <a href=""><img src="images/insta.png" alt="" /></a>
+              <a href=""><img src="images/tiktok.png" alt="" /></a>
             </div>
           </div>
         </div>
@@ -592,7 +761,7 @@
         </div>
       </div>
       <div class="footerBottom">
-        <img src="/images/redaktoransvar.png" alt="" />
+        <img src="images/redaktoransvar.png" alt="" />
         <div>
           <p>FriFagbevegelse.no er medlem av Fagpressen og redigeres etter:</p>
           <ul>
@@ -603,8 +772,8 @@
       </div>
     </footer>
   </body>
-  <script src="/js/innholdForside.js"></script>
-  <script src="/js/hamburgerControl.js"></script>
-  <script src="/js/list.js"></script>
-  <script type="module" src="/js/jobbkarusell.js"></script>
+  <script src="js/innholdForside.js"></script>
+  <script src="js/hamburgerControl.js"></script>
+  <script src="js/list.js"></script>
+  <script type="module" src="js/jobbkarusell.js"></script>
 </html>

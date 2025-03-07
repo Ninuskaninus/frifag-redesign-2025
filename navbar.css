@@ -157,6 +157,22 @@ nav img {
   transition: all 0.3s;
 }
 
+.hamburgerElementContainerMobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  display: none;
+  max-width: 660px;
+}
+
+.hamburgerRedaksjonerMob {
+  display: none;
+}
+
+.hamburgerDropdownActive {
+  display: grid;
+}
+
 @media screen and (max-width: 950px) {
   nav {
     flex-direction: column;

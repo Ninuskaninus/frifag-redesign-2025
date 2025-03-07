@@ -230,3 +230,53 @@ const strip = document.querySelector("#strip");
 strip.querySelector("h1").textContent = saker[0].tittel;
 strip.querySelector("img").src = saker[0].bilde;
 strip.querySelector("h4").textContent = saker[0].stikktittel;
+
+const sak35 = document.querySelector("#sak35");
+sak35.querySelector("h1").textContent = saker[1].tittel;
+sak35.querySelector("img").src = saker[1].bilde;
+sak35.querySelector("h4").textContent = saker[1].stikktittel;
+
+const sak36 = document.querySelector("#sak36");
+sak36.querySelector("h1").textContent = saker[2].tittel;
+sak36.querySelector("img").src = saker[2].bilde;
+sak36.querySelector("h4").textContent = saker[2].stikktittel;
+
+const sak37 = document.querySelector("#sak37");
+sak37.querySelector("h1").textContent = saker[3].tittel;
+sak37.querySelector("img").src = saker[3].bilde;
+sak37.querySelector("h4").textContent = saker[3].stikktittel;
+
+const sak38 = document.querySelector("#sak38");
+sak38.querySelector("h1").textContent = saker[4].tittel;
+sak38.querySelector("img").src = saker[4].bilde;
+sak38.querySelector("h4").textContent = saker[4].stikktittel;
+
+const sak39 = document.querySelector("#sak39");
+sak39.querySelector("h1").textContent = saker[0].tittel;
+sak39.querySelector("img").src = saker[0].bilde;
+sak39.querySelector("h4").textContent = saker[0].stikktittel;
+
+const sak40 = document.querySelector("#sak40");
+sak40.querySelector("h1").textContent = saker[1].tittel;
+sak40.querySelector("img").src = saker[1].bilde;
+sak40.querySelector("h4").textContent = saker[1].stikktittel;
+
+const sak41 = document.querySelector("#sak41");
+sak41.querySelector("h1").textContent = saker[2].tittel;
+sak41.querySelector("img").src = saker[2].bilde;
+sak41.querySelector("h4").textContent = saker[2].stikktittel;
+
+const sak42 = document.querySelector("#sak42");
+sak42.querySelector("h1").textContent = saker[3].tittel;
+sak42.querySelector("img").src = saker[3].bilde;
+sak42.querySelector("h4").textContent = saker[3].stikktittel;
+
+const sak43 = document.querySelector("#sak43");
+sak43.querySelector("h1").textContent = saker[4].tittel;
+sak43.querySelector("img").src = saker[4].bilde;
+sak43.querySelector("h4").textContent = saker[4].stikktittel;
+
+const sak44 = document.querySelector("#sak44");
+sak44.querySelector("h1").textContent = saker[0].tittel;
+sak44.querySelector("img").src = saker[0].bilde;
+sak44.querySelector("h4").textContent = saker[0].stikktittel;

@@ -1,3 +1,5 @@
+import Swiper from "swiper";
+
 const jobber = [
   {
     logo: "",
@@ -80,4 +82,13 @@ jobber.forEach((jobb) => {
     </div>
   `;
   jobbKarusellContainer.appendChild(jobbCard);
+});
+
+const swiper = new Swiper(".workCarousel", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
